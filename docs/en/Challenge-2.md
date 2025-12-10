@@ -1,10 +1,10 @@
 # Bonus Challenges
 
-### Challenge 2: Creating a Makefile to interact with the Rust project.
+### Challenge 2: Creating a Makefile to interact with the C# project.
 
 !!! warning "You may have a `Makefile` already created by Copilot as part of this workshop. If that is the case, just make the updates necessary, otherwise create a new one."
 
-Create a useful `Makefile` to make it easier to interact with the Rust project.
+Create a useful `Makefile` to make it easier to interact with the C# project.
 Use GitHub Copilot in Agent mode for this challenge. Use Agent mode to achieve
 the following:
 

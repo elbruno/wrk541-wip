@@ -2,10 +2,10 @@
 
 > *Try using GitHub Copilot in Ask Mode for this step.*
 
-Now that you have a good understanding of the project, you can start strategizing with GitHub Copilot. Using **Ask Mode**, ask questions about why the tests might be a good idea when rewriting the project in Rust.
+Now that you have a good understanding of the project, you can start strategizing with GitHub Copilot. Using **Ask Mode**, ask questions about why the tests might be a good idea when rewriting the project in C#.
 
 - Ask GitHub Copilot to provide a summary of the tests
-- Ask for suggestions on how to properly rewrite this project in Rust
+- Ask for suggestions on how to properly rewrite this project in C#
 
 !!! note
     Sometimes, GitHub Copilot may be eager to provide a lot of information including whole files with code. This is probably not what you want when trying to think about your options.
@@ -16,7 +16,7 @@ Now that you have a good understanding of the project, you can start strategizin
 
     ```text
     #codebase why are these tests using BASH a good idea if I want to rewrite the
-    application from Python to Rust?
+    application from Python to C#?
     ```
 
 
@@ -24,7 +24,7 @@ Now that you have a good understanding of the project, you can start strategizin
 
 > *For this step you can use either Edit Mode or Agent Mode.*
 
-The tests are not complete and there are some missing cases. Use GitHub Copilot to identify the missing tests. This will help you get full coverage of the application before you start rewriting it in Rust.
+The tests are not complete and there are some missing cases. Use GitHub Copilot to identify the missing tests. This will help you get full coverage of the application before you start rewriting it in C#.
 
 For this step, you can use either **Edit Mode** or **Agent Mode**.
 
@@ -47,4 +47,3 @@ For this step, you can use either **Edit Mode** or **Agent Mode**.
     Help me run the tests using the BASH file and check that they pass. In case of
     failure, help me address the failures to get the tests passing
     ```
-
