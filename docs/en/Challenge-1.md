@@ -13,7 +13,7 @@ mode to get guidance verifying the container.
 
 1. Ask Copilot to help you generate a Dockerfile to containerize the C#
    project
-1. Review the Dockerfile created, optionally switch to Edit mode to make
+1. Review the Dockerfile created, optionally switch to Agent mode to make
    specific changes to the file
 1. Use Agent mode to verify the container builds and can run
 
