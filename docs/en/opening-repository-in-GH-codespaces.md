@@ -1,22 +1,28 @@
 # Opening the Repository (Local or GitHub Codespaces)
 
-Choose the workflow that best fits your setup. If you're working locally, we assume all required tools are already installed—see the Resources page for a quick prerequisite checklist. If you prefer a fully hosted experience, follow the GitHub Codespaces path.
+Choose the workflow that best fits your setup. If you're working locally, we assume all required tools are already installed (see the Resources page for a quick prerequisite checklist). If you prefer a fully hosted experience, follow the GitHub Codespaces path.
 
 === "Local environment"
 
 1. Open the repository page: [Real World Code Migration with GitHub Copilot Agent Mode](https://github.com/microsoft/aitour26-WRK541-real-world-code-migration-with-github-copilot-agent-mode){:target="_blank"}
-2. Clone the repo to a working folder on your machine:
+
+1. Clone the repo to a working folder on your machine:
 
     ```bash
     git clone https://github.com/microsoft/aitour26-WRK541-real-world-code-migration-with-github-copilot-agent-mode.git
     ```
 
-3. In VS Code, choose **File > Open Folder** and select the cloned folder.
-4. Sign in to GitHub in VS Code and ensure GitHub Copilot is enabled. (Command Palette → **GitHub: Sign in**.)
-5. Restore dependencies for both projects:
-   - **Python app**: `cd src/python-app && pip install -r requirements.txt`
-   - **C# app**: `cd src/csharp-app/WeatherApi && dotnet restore`
-6. You're ready to follow the rest of the workshop locally. If you need the tool list, see the **Local environment prerequisites** section on the Resources page.
+1. In VS Code, choose **File > Open Folder** and select the cloned folder.
+
+1. Sign in to GitHub in VS Code and ensure GitHub Copilot is enabled. (Command Palette → **GitHub: Sign in**.)
+
+1. Restore dependencies for the python project:
+
+    ```bash
+    cd src/python-app && pip install -r requirements.txt`
+    ```
+
+1. You're ready to follow the rest of the workshop locally. If you need the tool list, see the **Local environment prerequisites** section on the Resources page.
 
 === "GitHub Codespaces"
 

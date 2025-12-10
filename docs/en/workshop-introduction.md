@@ -1,6 +1,6 @@
 # Workshop Introduction
 
-## Migrating Zava's Temperature API from Python to C #
+## Migrating Zava's Temperature API from Python to C\#
 
 As part of **Zava**'s business goals, the company is expanding their cutting-edge smart fiber technology to a wider array of retail products. Zava specializes in heat-resistant materials that adapt to various climate conditions, and their current temperature/season/location API serves as a critical backend service for these innovative products.
 
@@ -12,17 +12,16 @@ Let's go through some challenging requests for GitHub Copilot and address them
 as they happen.
 
 !!! note
-    This repo is intended to give an introduction to various **GitHub Copilot** features, such as **Copilot Chat** and **inline chat** within **VS Code**. Hence the step-by-step guides below contain the general description of what needs to be done, and Copilot Chat or inline chat can support you in generating the necessary commands.
+    This repo is intended to give an introduction to various **GitHub Copilot** features, such as **Copilot Chat**, **inline chat** and **Agent Mode** within **Visual Studio Code**. Hence the step-by-step guides below contain the general description of what needs to be done, and Copilot can support you in generating the necessary commands.
 
-    Each step (where applicable) also contains a `Cheatsheet` which can be used to validate the Copilot suggestion(s) against the correct command.
+    Each step (where applicable) also contains a `Cheatsheet / Tip` which can be used to validate the Copilot suggestion(s) against the correct command.
 
     💡 Play around with different prompts and see how it affects the accuracy of the GitHub Copilot suggestions. For example, when using inline chat, you can use an additional prompt to refine the response without having to rewrite the whole prompt.
 
 ## Workshop features
 
-You will be working with a Python project that has an HTTP
-API. This project needs to be migrated and your main task will be to migrate
-it over using the C# programming language with .NET Minimal APIs.
+You will be working with a Python project that has an HTTP API. This project needs to be migrated and your main task will be to migrate it over using the C# programming language with .NET Minimal APIs.
+
 Here are some features:
 
 1. Run the web application and open up the browser
@@ -32,7 +31,7 @@ Here are some features:
 
 ## GitHub Copilot Modes
 
-GitHub Copilot offers three distinct modes: **Ask, Edit** and **Agent**, each designed to enhance your coding workflow in unique ways. These modes cater to different levels of assistance, from answering questions to autonomously managing complex tasks.
+GitHub Copilot offers distinct modes: **Ask**, **Edit**, **Plan** and **Agent**, each designed to enhance your coding workflow in unique ways. These modes cater to different levels of assistance, from answering questions to autonomously managing complex tasks.
 
 ### Ask Mode
 
@@ -60,4 +59,4 @@ GitHub Copilot offers three distinct modes: **Ask, Edit** and **Agent**, each de
 
 ## Available Models
 
-This workshop is model-agnostic, and as such we do not require learners to select a specific one during their work. However, it is worth noting that GitHub Copilot supports a variety of models (such as GPT-5, Claude Sonnet 4, Gemini, etc.) of varying capabilities. To learn more about GitHub Copilot and its different plans, visit the **Resources** section or visit this link: [GitHub Copilot Plans](https://github.com/features/copilot/plans)
+This workshop is model-agnostic, and as such we do not require learners to select a specific one during their work. However, it is worth noting that GitHub Copilot supports a variety of models (such as GPT models, Claude models, Gemini models, etc.) of varying capabilities. To learn more about GitHub Copilot and its different plans, visit the **Resources** section or visit this link: [GitHub Copilot Plans](https://github.com/features/copilot/plans)
