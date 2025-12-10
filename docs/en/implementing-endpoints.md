@@ -45,6 +45,20 @@ Now that you have the first endpoint in C#, it is time to validate. This process
 - Ask Copilot help to run the C# project in the same address and port as the Python project so that tests can run
 - Run the tests to ensure they are passing, fix any issues that arise
 
+- You can open 2 terminals and run these commands:
+- In the first terminal, run the C# app:
+
+```bash
+cd src/csharp-app
+dotnet run
+```
+
+- In the second terminal, run the tests:
+
+```bash
+bash src/tests/test_endpoints.sh
+```
+
 ??? question "Tip"
     Prompt *(Agent Mode)*
 

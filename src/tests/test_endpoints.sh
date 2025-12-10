@@ -1,6 +1,6 @@
 #!/bin/bash
 # Test the API endpoints
-# 
+#
 # By default, this script tests against port 8000 (Python FastAPI default).
 # For C# application, either run with: dotnet run --urls "http://localhost:8000"
 # Or update the PORT variable below to 5000 (C# default port).
