@@ -69,7 +69,7 @@ Next, we will launch the project and run the web application. Let's use GitHub C
 
 Tests are provided in the `src/python-app/webapp/test_main.py` file. This Python test file uses FastAPI's TestClient to validate the API endpoints. Run the tests and inspect the output.
 
-Open a new terminal and run the Python tests using pytest:
+With the app already running in a terminal, open a new terminal and run the Python tests using pytest:
 
 ```bash
 cd src/python-app/webapp
@@ -79,4 +79,6 @@ pytest test_main.py -v
 - If any tests are not currently passing, leverage GitHub Copilot to help you fix them and then re-run the tests.
 
 !!! note
-    These Python tests use FastAPI's TestClient, which doesn't require the application to be running separately. The tests will start the app internally for testing.
+    These tests use HTTP requests and require the application to be running before executing the tests. The tests will automatically skip if the app is not running at the configured BASE_URL (default: <http://localhost:8000>).
+
+    These same tests will be used to validate the C# web app by setting the BASE_URL environment variable to match the C# app's port (e.g., `$env:BASE_URL="http://localhost:5000"` on Windows or `export BASE_URL="http://localhost:5000"` on Linux/Mac).
