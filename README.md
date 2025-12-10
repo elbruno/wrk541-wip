@@ -15,7 +15,7 @@ If you will be delivering this session, check the [session-delivery-sources](./s
 
 - **Who is this for**: Any technologist that is looking to apply AI pair-programming techniques with GitHub Copilot to perform challenging work like migrating or translating from one programming language to another.
 - **What you'll learn**: You'll use advanced GitHub Copilot techniques that are specifically useful when translating projects in different programming languages, as well as the different modes GitHub Copilot has to offer.
-- **What you'll build**: An HTTP API migrated from Python to C# (with .NET Minimal APIs), demonstrating how to use GitHub Copilot for real-world code migration scenarios. The repository also includes materials for migrating to Rust.
+- **What you'll build**: An HTTP API migrated from Python to C# (with .NET Minimal APIs), demonstrating how to use GitHub Copilot for real-world code migration scenarios.
 
 
 ### 🧠 Learning Outcomes
