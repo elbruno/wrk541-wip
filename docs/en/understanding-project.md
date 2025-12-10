@@ -3,9 +3,10 @@
 Before we start migrating code, it's crucial to understand what we're working with.
 
 ## Start with the Python Project
-Familiarize yourself with the project and its structure. The main file is `main.py`, and is located within the `src` directory, under the `python-app\webapp` folder. This file contains the main logic of the application. 
 
-### 1. Explore the project 
+Familiarize yourself with the project and its structure. The main file is `main.py`, and is located within the `src` directory, under the `python-app\webapp` folder. This file contains the main logic of the application.
+
+### 1. Explore the project
 
 > Try using GitHub Copilot in Ask Mode for this step.
 
@@ -31,7 +32,6 @@ Use the `#codebase` tool to provide context to Copilot and explain what is going
     #codebase provide me a detailed summary of what this Python project is about
     ```
 
-
 ### 2. Determine the API endpoints
 
 > *Try using GitHub Copilot in Ask Mode for this step.*
@@ -52,12 +52,12 @@ Next, we will launch the project and run the web application. Let's use GitHub C
 
 - Try to run the project based on the suggestions of Copilot  
 
-!!! tip "You'll need to have a terminal opened in your codespace and you'll need **uvicorn** to execute the FastAPI application."
+!!! tip "You'll need to have a terminal opened and you'll need **uvicorn** to execute the FastAPI application."
 
 !!! warning
     If you are getting the following error message "Error loading ASGI app. Could not import module (...)", make sure the path suggested by Copilot in its output is the correct file path of the app logic (main.py).
 
-- See all the possible endpoints and their requests types, by navigating to the swagger UI page, whose url is printed in the app startup output. 
+- See all the possible endpoints and their requests types, by navigating to the swagger UI page, whose url is printed in the app startup output.
 
 !!! tip "Have a look to [weather.json](https://github.com/microsoft/aitour26-WRK541-real-world-code-migration-with-github-copilot-agent-mode/blob/main/src/python-app/webapp/weather.json) file to check the allowed parameters to test the endpoints."
 
