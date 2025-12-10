@@ -45,13 +45,14 @@ This guide helps developers migrate the Python Weather API to C# .NET 10 using A
 ??? warning
      Creating a new instance of chat at this point can prove useful. It will clear some of the previous context and allow for GitHub Copilot to start fresh. If you wish to do so, all you need to do is click the ![New Chat Button on GitHub Copilot](./media/copilot-newchat.png) button at the top of Copilot's chat window.
 
-As we will carry out a more complex set of tasks, we will move on from **Edit Mode** and solely work in **Agent Mode**. Once you have switched, ask GitHub Copilot to create the scaffolding necessary for your C# project. Ask GitHub Copilot to give you a step by step to start the project and the commands to run to get started.
+As we will carry out a more complex set of tasks, we will work in **Agent Mode**. Once you have switched, ask GitHub Copilot to create the scaffolding necessary for your C# project. Ask GitHub Copilot to give you a step by step to start the project and the commands to run to get started.
 
 ??? question "Tip"
      Prompt *(Agent Mode)*
 
      ```text
-     #file:csharp-app create the C# scaffolding in csharp-app folder, where we are going to migrate the python project. Use .NET Minimal APIs. Don't perform any code migration for now. Provide me with guided steps to run the project afterwards.
+     Create a new folder named `csharp-app` in the `src` directory.
+     Create the C# scaffolding in csharp-app folder, where we are going to migrate the python project. Use .NET Minimal APIs. Don't perform any code migration for now. Provide me with guided steps to run the project afterwards.
      ```
 
 The framework and the serializer should automatically be included without you having to specify it. This file can be used for any other instruction you don't want to repeat.
