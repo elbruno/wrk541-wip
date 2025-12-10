@@ -15,7 +15,7 @@ If you will be delivering this session, check the [session-delivery-sources](./s
 
 - **Who is this for**: Any technologist that is looking to apply AI pair-programming techniques with GitHub Copilot to perform challenging work like migrating or translating from one programming language to another.
 - **What you'll learn**: You'll use advanced GitHub Copilot techniques that are specifically useful when translating projects in different programming languages, as well as the different modes GitHub Copilot has to offer.
-- **What you'll build**: An HTTP API that uses Rust with full compatibility from the original HTTP API written in Python.
+- **What you'll build**: An HTTP API migrated from Python to C# (with .NET Minimal APIs), demonstrating how to use GitHub Copilot for real-world code migration scenarios. The repository also includes materials for migrating to Rust.
 
 
 ### 🧠 Learning Outcomes
@@ -23,14 +23,16 @@ If you will be delivering this session, check the [session-delivery-sources](./s
 In this workshop, you will:
 
   - Learn the differences about each of GitHub Copilot Modes, when to use each one, best practices and tools to help you get the most out of your interactions.
-  - Understand the Differences Between Python and Rust for Web Development
-  Learn the key differences in syntax, libraries, and frameworks when transitioning from Python's FastAPI to Rust's actix-web.
-  - Implement JSON Serialization and Deserialization in Rust
-  Gain hands-on experience using the serde library to handle JSON data, ensuring compatibility with the original Python API.
-  - Develop and Validate Incremental Endpoints in Rust
+  - Understand the Differences Between Python and C# for Web Development
+  Learn the key differences in syntax, libraries, and frameworks when transitioning from Python's FastAPI to C#'s ASP.NET Core Minimal APIs.
+  - Implement JSON Serialization and Deserialization in C#
+  Gain hands-on experience using System.Text.Json to handle JSON data, ensuring compatibility with the original Python API.
+  - Develop and Validate Incremental Endpoints in C#
   Practice creating and testing individual endpoints iteratively, ensuring correctness and alignment with the original Python API.
-  - Optimize Performance and Identify Bottlenecks in Rust
-  Learn to analyze and address potential performance issues, such as redundant file serialization, while building a production-ready Rust application.
+  - Integrate Swagger/OpenAPI Documentation
+  Learn to add comprehensive API documentation using Swashbuckle and ASP.NET Core's built-in OpenAPI support.
+  - Write Unit Tests with MSTest
+  Practice creating integration tests using MSTest and WebApplicationFactory to validate API functionality.
 
 
 ## 📣 Prerequisites
@@ -43,7 +45,10 @@ Before joining the workshop, there is only one prerequisite: you must have a pub
 
 1. GitHub Copilot Chat
 1. VS Code
-1. Python & Rust
+1. Python 3.12
+1. C# with .NET 9.0 (Minimal APIs)
+1. MSTest for unit testing
+1. Swagger/OpenAPI for API documentation
 
 ### 📚 Continued Learning Resources
 | Resources          | Links                             | Description        |
