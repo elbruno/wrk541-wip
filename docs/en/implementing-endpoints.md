@@ -7,11 +7,6 @@ Now that you have the scaffolding, you can start creating a single endpoint. Use
 !!! important
     You might be tempted to ask Copilot to generate the whole file, but you must validate each part as you make progress. It is easier to validate smaller parts than a whole file with multiple endpoints and logic.
 
-!!! note
-    In the prompts where a `#file:filename` is used, it indicates to Copilot the file where the code should be generated.
-    You should manually type the `#` and the file selected, and then copy and paste the rest of the prompt.
-    This is useful when you have multiple files in your project.
-
 ??? question "Tip"
     Prompt *(Agent Mode)*
 
