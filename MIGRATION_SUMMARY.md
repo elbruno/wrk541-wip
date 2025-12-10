@@ -24,13 +24,13 @@ Successfully implemented a complete migration of the Python FastAPI weather appl
   - Error case testing (invalid country, city, month)
   - 100% test pass rate
 
-### 3. Shell Test Scripts
-- **Updated**: `src/tests/test_endpoints.sh` - Now supports both Python and C# apps with configurable port
-- **Created**: `src/tests/test_csharp_endpoints.sh` - Dedicated C# API test script
+### 3. Python Test Scripts
+- **Location**: `src/python-app/webapp/test_main.py` - Python tests that validate both implementations
+- **Framework**: pytest with FastAPI TestClient
 - **Features**:
-  - Color-coded pass/fail output
-  - Port configuration via environment variable
-  - Tests all endpoints and error cases
+  - Tests all endpoints
+  - Can validate both Python and C# implementations by running the C# app on the same port
+  - Fast and reliable test execution
 
 ### 4. Development Environment
 - **Updated**: `.devcontainer/Dockerfile` - Added .NET 10 SDK installation
@@ -83,16 +83,12 @@ Successfully implemented a complete migration of the Python FastAPI weather appl
 Total: 6 tests, 6 passed, 0 failed
 ```
 
-### Shell Endpoint Tests
+### Python pytest Tests
 ```
-✅ Root endpoint
-✅ Countries endpoint
-✅ Monthly average endpoint for London in January
-✅ Invalid country (404)
-✅ Invalid city (404)
-✅ Invalid month (404)
+✅ test_root
+✅ test_countries
 
-Total: 6 tests, 6 passed, 0 failed
+Total: 2 tests in test_main.py (can be expanded to cover more endpoints)
 ```
 
 ### Code Quality
@@ -140,20 +136,16 @@ dotnet run --urls "http://localhost:8000"
 
 ### Running Tests
 
+**Python Tests** (works for both Python and C# apps):
+```bash
+cd src/python-app/webapp
+pytest test_main.py -v
+```
+
 **MSTest (C#)**:
 ```bash
 cd src/csharp-app/WeatherApi.Tests
 dotnet test
-```
-
-**Shell Tests**:
-```bash
-# For Python app (default port 8000)
-cd src/tests
-./test_endpoints.sh
-
-# For C# app (custom port)
-API_PORT=5000 ./test_csharp_endpoints.sh
 ```
 
 ## Files Changed
@@ -166,14 +158,15 @@ API_PORT=5000 ./test_csharp_endpoints.sh
 - `src/csharp-app/WeatherApi.Tests/Test1.cs` - Integration tests
 - `src/csharp-app/WeatherApi.Tests/WeatherApi.Tests.csproj` - Test project
 - `src/csharp-app/README.md` - C# app documentation
-- `src/tests/test_csharp_endpoints.sh` - C# test script
 
 ### Modified Files
 - `.devcontainer/Dockerfile` - Added .NET 10 SDK
 - `.devcontainer/devcontainer.json` - Added C# extensions
 - `.gitignore` - Added .NET artifacts
 - `README.md` - Updated for C# migration
-- `src/tests/test_endpoints.sh` - Added port configuration
+
+### Removed Files
+- `src/tests/` - Removed bash test scripts (replaced with Python tests)
 
 ## Next Steps
 

@@ -43,35 +43,36 @@ Now that you have the first endpoint in C#, it is time to validate. This process
 
 - Make sure the Python project is no longer running
 - Ask Copilot help to run the C# project in the same address and port as the Python project so that tests can run
-- Run the tests to ensure they are passing, fix any issues that arise
+- Run the Python tests to ensure they are passing, fix any issues that arise
 
 - You can open 2 terminals and run these commands:
 - In the first terminal, run the C# app:
 
 ```bash
 cd src/csharp-app
-dotnet run
+dotnet run --urls "http://localhost:8000"
 ```
 
-- In the second terminal, run the tests:
+- In the second terminal, run the Python tests:
 
 ```bash
-bash src/tests/test_endpoints.sh
+cd src/python-app/webapp
+pytest test_main.py -v
 ```
 
 ??? question "Tip"
     Prompt *(Agent Mode)*
 
     ```text
-    Please stop any process on port `8000`, then start the C# minimal API in `src\csharp-app` with `ASPNETCORE_URLS=http://0.0.0.0:8000`. Do not change any C# code or tests.
-    Start the C# app in the foreground in one terminal and open a second terminal to run the bash tests so they can execute while the app is running.
-    In the second terminal, run `src/tests/test_endpoints.sh`. Only verify the `/` endpoint for now and report the test output.
+    Please stop any process on port `8000`, then start the C# minimal API in `src\csharp-app` with `ASPNETCORE_URLS=http://0.0.0.0:8000`. Do not change any C# code.
+    Start the C# app in the foreground in one terminal and open a second terminal to run the Python tests so they can execute while the app is running.
+    In the second terminal, run the Python tests from `src/python-app/webapp/test_main.py` using pytest. Only verify the `/` endpoint for now and report the test output.
     Use the workspace root and a shell.
     ```
 
 ### 8. Continue with all other endpoints
 
-Use the same process as above to create all other endpoints. Add a single endpoint at a time, validate it, and run the tests.
+Use the same process as above to create all other endpoints. Add a single endpoint at a time, validate it, and run the Python tests to ensure compatibility.
 
 !!! tip "When implementing the next endpoint - e.g. '/countries' - specify in your prompt to Copilot that it should use the same data used by the python app, hosted in the 'weather.json' file."
 

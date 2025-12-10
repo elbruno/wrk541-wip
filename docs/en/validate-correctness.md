@@ -2,7 +2,7 @@
 
 ### 9. Validate correctness
 
-Once you have all endpoints in C# with passing tests, then you can ask Copilot to do a review of the whole file. Identify potential caveats and issues or performance problems. For example, imagine if every endpoint is deserializing the file every time. This is a performance issue and you can ask Copilot to identify it.
+Once you have all endpoints in C# with passing Python tests, then you can ask Copilot to do a review of the whole file. Identify potential caveats and issues or performance problems. For example, imagine if every endpoint is deserializing the file every time. This is a performance issue and you can ask Copilot to identify it.
 
 ??? question "Tip"
     Prompt *(Agent Mode)*
@@ -19,7 +19,7 @@ Once you have all endpoints in C# with passing tests, then you can ask Copilot t
 Finally, you have a 1:1 mapping of the Python project to the C# project. Now you can start adding more endpoints and tests. For example the `/countries/{country}` endpoint. This endpoint is not present in the Python project, but you can add it to the C# project.
 
 - With the `Program.cs` file open, ask Copilot about other possible endpoints
-- Open the `test_endpoints.sh` file and ask Copilot to add more tests for the new endpoints
+- Open the `test_main.py` file in the Python app and ask Copilot to add more tests for the new endpoints
 - Run the tests to ensure they are passing, fix any issues that arise
 
 ??? question "Tip"

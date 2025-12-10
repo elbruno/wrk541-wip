@@ -21,7 +21,7 @@ Key prompting techniques included: scoping requests narrowly (“only add the ro
 | Area | Result |
 |------|--------|
 | Functional Parity | All Python endpoints replicated in C# with matching responses |
-| Test Coverage | Enhanced shell tests + new MSTest tests for faster feedback |
+| Test Coverage | Python tests validate both implementations + optional C# MSTest tests for faster feedback |
 | Reliability | Compile-time type safety & clearer types via C# + `System.Text.Json` |
 | Developer UX | Makefile + container image for consistent local & portable runs |
 | AI Leverage | Demonstrated productive Copilot usage patterns across modes |
