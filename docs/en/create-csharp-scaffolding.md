@@ -50,12 +50,14 @@ As we will carry out a more complex set of tasks, we will work in **Agent Mode**
 ??? question "Tip"
      Prompt *(Agent Mode)*
 
-     ```text
-     Create a new folder named `csharp-app` in the `src` directory.
-     Create the C# scaffolding in csharp-app folder, where we are going to migrate the python project. Use .NET Minimal APIs. Don't perform any code migration for now. Provide me with guided steps to run the project afterwards. Create the minimal code necessary to have a running C# .NET 10 Web API project.
-     ```
-
-The framework and the serializer should automatically be included without you having to specify it.
+    ```text
+    Create a new folder named `csharp-app` in the `src` directory.
+    Create the C# scaffolding in csharp-app folder, where we are going to migrate the python project. 
+    Use .NET Minimal APIs. 
+    Don't perform any code migration for now. 
+    Provide me with guided steps to run the project afterwards. 
+    Create the minimal code necessary to have a running C# .NET 10 Web API project.
+    ```
 
 Once GitHub Copilot has created the scaffolding, have a look at the files created in the `csharp-app` folder. You should see a `.csproj` file and a `Program.cs` file.
 

@@ -8,11 +8,10 @@ Once you have all endpoints in C# with passing Python tests, then you can ask Co
     Prompt *(Agent Mode)*
 
     ```text
-    Identify any potential problems with my Program.cs file. Specifically I am
-    interested in understanding redundancy and any code that is doing unnecessary
-    work. Do not generate any code, just explain.
+    Identify any potential problems with my Program.cs file. 
+    Specifically I am interested in understanding redundancy and any code that is doing unnecessary work. 
+    Do not generate any code, just explain.
     ```
-
 
 ### 10. Add more endpoints with tests
 

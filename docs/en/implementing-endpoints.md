@@ -11,7 +11,8 @@ Now that you have the scaffolding, you can start creating a single endpoint. Use
     Prompt *(Agent Mode)*
 
     ```text
-    #file:Program.cs add the root of the API only. This is the '/' endpoint, do not generate other endpoints yet, focus only on the single root endpoint for now.
+    #file:Program.cs add the root of the API only. 
+    This is the '/' endpoint, do not generate other endpoints yet, focus only on the single root endpoint for now.
     ```
 
 The minimal code for the root endpoint should look like this:
@@ -65,12 +66,35 @@ pytest test_main.py -v
     Use the workspace root and a shell.
     ```
 
-### 8. Continue with all other endpoints
+### 8 Implement remaining endpoints
+
+Implement all other endpoints using Agent Mode or Plan Mode. In each scenario, also add the corresponding swagger annotations.
+
+#### 8.1 Continue with all other endpoints using Agent Mode
 
 Use the same process as above to create all other endpoints. Add a single endpoint at a time, validate it, and run the Python tests to ensure compatibility.
 
 !!! tip "When implementing the next endpoint - e.g. '/countries' - specify in your prompt to Copilot that it should use the same data used by the python app, hosted in the 'weather.json' file."
 
-For the JSON file, you will need to deserialize it using `System.Text.Json`. If you aren't familiar with this process you will have to rely on Copilot guidance. Ensure that you generate the smallest possible code and validate it immediately.
+For the JSON file, you will need to deserialize it. If you aren't familiar with this process you will have to rely on Copilot guidance. Ensure that you generate the smallest possible code and validate it immediately.
 
 !!! success "Validating smaller parts of the code is easier than validating a whole file. It is also easier to debug smaller parts of the code. This is a good practice when using GitHub Copilot and it will help you in the long run."
+
+#### 8.2 Implementation using Plan Mode
+
+> *You can try using GitHub Copilot in Plan Mode for this step.*
+
+When implementing the next endpoints, you can leverage **Plan Mode** to help you outline the steps needed for each endpoint. This mode will assist you in breaking down the implementation into manageable tasks.
+
+Let's start asking GitHub Copilot to help you plan the implementation of the missing endpoints.
+
+??? question "Tip"
+    Prompt *(Plan Mode)*
+
+    Analyze the other endpoints in the #file:main.py and implement this in the #file:Program.cs file using .NET Minimal APIs.
+    Implement the swagger annotations for each endpoint.
+    The root of the API should redirect to the swagger UI page.    
+
+Once the plan is done you should see the plan, and you can ask GitHub Copilot to start implementing the steps by switching to **Agent Mode** and asking it to follow the plan step by step.
+
+![Start Implementation](./media/start_plan_implementation.png){ target="_blank" }
