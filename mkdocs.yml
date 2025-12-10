@@ -16,7 +16,7 @@ nav:
   - Workshop Navigation: navigating-workshop.md
   - Getting Started:
     - Workshop Introduction: workshop-introduction.md
-    - Opening the Repository in GitHub Codespaces: opening-repository-in-GH-codespaces.md
+    - Open the Repository (Local or Codespaces): opening-repository-in-GH-codespaces.md
     - Understanding the Project: understanding-project.md
   - Strategize with Copilot:
     - Analyze the Project: analyze-project.md

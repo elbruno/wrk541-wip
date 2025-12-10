@@ -37,6 +37,11 @@ In this workshop, you will:
 
 Before joining the workshop, there is only one prerequisite: you must have a public GitHub account. All resources, dependencies, and data are part of the repository itself. Make sure you have your GitHub Copilot license, trial, or the free version.
 
+### Run the workshop your way
+
+- **Local machine**: If you already have Git, VS Code with GitHub Copilot, Python 3.12, and the .NET 10 SDK installed, you can clone the repository and follow the exercises locally. A full checklist lives in [PREREQUISITES.md](./PREREQUISITES.md), and the Resources page includes a quick reminder of the required tools.
+- **GitHub Codespaces**: Prefer a zero-install setup? Launch a Codespace from the repository page and continue the tutorial in the cloud. The step-by-step guide is in [`docs/en/opening-repository-in-GH-codespaces.md`](./docs/en/opening-repository-in-GH-codespaces.md).
+
 ### 💻 Technologies Used
 
 1. GitHub Copilot Chat
