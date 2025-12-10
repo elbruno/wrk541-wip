@@ -33,5 +33,5 @@ Finally, you have a 1:1 mapping of the Python project to the C# project. Now you
     Prompt *(Agent Mode)*
 
     ```text
-    #codebase implement /countries/{country} endpoint and add a test to assess it.
+    #file:Program.cs implement /countries/{country} endpoint and add a test to assess it.
     ```
