@@ -24,6 +24,7 @@
 		"codespaces": {
 			"openFiles": [
 			  "src/python-app/webapp/main.py",
+			  "README.md"
 			]
 		},
 		"vscode": {
@@ -38,6 +39,8 @@
 			"extensions": [
 			  "ms-python.python",
 			  "ms-python.vscode-pylance",
+			  "ms-dotnettools.csharp",
+			  "ms-dotnettools.csdevkit",
 			  "GitHub.copilot"
 			]
 		}
