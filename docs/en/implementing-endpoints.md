@@ -4,8 +4,13 @@ Now that you have the scaffolding, you can start creating a single endpoint. Use
 
 - Open the `Program.cs` file and ask Copilot to generate *only* the `/` endpoint
 
-!!! note
+!!! important
     You might be tempted to ask Copilot to generate the whole file, but you must validate each part as you make progress. It is easier to validate smaller parts than a whole file with multiple endpoints and logic.
+
+!!! note
+    In the prompts where a `#file:filename` is used, it indicates to Copilot the file where the code should be generated.
+    You should manually type the `#` and the file selected, and then copy and paste the rest of the prompt.
+    This is useful when you have multiple files in your project.
 
 ??? question "Tip"
     Prompt *(Agent Mode)*
@@ -13,6 +18,24 @@ Now that you have the scaffolding, you can start creating a single endpoint. Use
     ```text
     #file:Program.cs add the root of the API only. This is the '/' endpoint, do not generate other endpoints yet, focus only on the single root endpoint for now.
     ```
+
+The minimal code for the root endpoint should look like this:
+
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+
+var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+
+app.MapGet("/", () => Results.Ok(new { message = "Welcome to the C# minimal API root." }))
+   .WithName("Root");
+
+app.Run();
+```
 
 ### 7. Validate your first C# endpoint
 
@@ -26,10 +49,10 @@ Now that you have the first endpoint in C#, it is time to validate. This process
     Prompt *(Agent Mode)*
 
     ```text
-    Run the C# project in the same address and port (8000) as the Python one. Make sure
-    the Python API is no longer running. Then, run the BASH tests so that I can
-    verify the first endpoint in C# is working. Only focus on the "/" endpoint
-    for now
+    Please stop any process on port `8000`, then start the C# minimal API in `src\csharp-app` with `ASPNETCORE_URLS=http://0.0.0.0:8000`. Do not change any C# code or tests.
+    Start the C# app in the foreground in one terminal and open a second terminal to run the bash tests so they can execute while the app is running.
+    In the second terminal, run `src/tests/test_endpoints.sh`. Only verify the `/` endpoint for now and report the test output.
+    Use the workspace root and a shell.
     ```
 
 ### 8. Continue with all other endpoints
