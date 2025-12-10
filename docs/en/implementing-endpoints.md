@@ -7,15 +7,12 @@ Now that you have the scaffolding, you can start creating a single endpoint. Use
 !!! note
     You might be tempted to ask Copilot to generate the whole file, but you must validate each part as you make progress. It is easier to validate smaller parts than a whole file with multiple endpoints and logic.
 
-
 ??? question "Tip"
     Prompt *(Agent Mode)*
 
     ```text
-    #codebase add the root of the API only. This is the '/' endpoint, do not
-    generate other endpoints yet, focus only on the single root endpoint for now.
+    #file:Program.cs add the root of the API only. This is the '/' endpoint, do not generate other endpoints yet, focus only on the single root endpoint for now.
     ```
-
 
 ### 7. Validate your first C# endpoint
 
