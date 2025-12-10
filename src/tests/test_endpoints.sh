@@ -26,8 +26,8 @@ test_endpoint() {
     fi
 }
 
-# Test the root endpoint
-test_endpoint "http://localhost:${PORT}/" 302 "root endpoint (expecting 302 for Python, 301 for C#)"
+# Test the root endpoint (both Python and C# return 301)
+test_endpoint "http://localhost:${PORT}/" 301 "root endpoint"
 
 # Test the countries endpoint
 test_endpoint "http://localhost:${PORT}/countries" 200 "countries endpoint"
