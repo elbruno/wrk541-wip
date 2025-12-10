@@ -2,7 +2,7 @@
 
 > *Try using GitHub Copilot in Ask Mode for this step.*
 
-Now that you have a good understanding of the project, you can start strategizing with GitHub Copilot. Using **Ask Mode**, ask questions about why the tests might be a good idea when rewriting the project in C#.
+Now that you have a good understanding of the project, you can start strategizing with GitHub Copilot. Using **Ask Mode**, ask questions about why the Python tests might be useful when rewriting the project in C#.
 
 - Ask GitHub Copilot to provide a summary of the tests
 
@@ -16,7 +16,7 @@ Now that you have a good understanding of the project, you can start strategizin
     Prompt *(Ask Mode)*
 
     ```text
-    #codebase why are these tests using BASH a good idea if I want to rewrite the application from Python to C#?
+    #codebase why are the Python tests in test_main.py a good way to validate the C# rewrite?
     ```
 
 - Ask for suggestions on how to properly rewrite this project in C#
@@ -34,11 +34,11 @@ Now that you have a good understanding of the project, you can start strategizin
 
 ### 5. Identify missing tests
 
-The tests are not complete and there are some missing cases. Use GitHub Copilot to identify the missing tests. This will help you get full coverage of the application before you start rewriting it in C#.
+The Python tests may not be complete and there could be some missing cases. Use GitHub Copilot to identify the missing tests. This will help you get full coverage of the application before you start rewriting it in C#.
 
 For this step, you must use **Agent Mode**.
 
-- Open the test file and ask GitHub Copilot to identify missing tests
+- Open the test file (`test_main.py`) and ask GitHub Copilot to identify missing tests
 - Implement the missing tests
 - Run the tests to ensure they are passing, fix any issues that arise
 
@@ -46,5 +46,5 @@ For this step, you must use **Agent Mode**.
     Prompt *(Agent Mode)*
 
     ```text
-    Help me run the tests using the BASH file and check that they pass. In case of failure, help me address the failures to get the tests passing
+    Help me run the Python tests in src/python-app/webapp/test_main.py and check that they pass. In case of failure, help me address the failures to get the tests passing
     ```

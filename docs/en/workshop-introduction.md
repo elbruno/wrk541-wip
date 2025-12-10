@@ -28,7 +28,7 @@ Here are some features:
 1. Run the web application and open up the browser
 1. Use the /docs endpoint in the running app to see the endpoints
 1. All dependencies and libraries are pre-installed for Python
-1. An initial test file in BASH is provided to validate correctness
+1. Python tests are provided to validate correctness of both Python and C# implementations
 
 ## GitHub Copilot Modes
 

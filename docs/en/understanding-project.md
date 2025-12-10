@@ -61,20 +61,20 @@ Next, we will launch the project and run the web application. Let's use GitHub C
 
 !!! tip "Have a look to [weather.json](https://github.com/microsoft/aitour26-WRK541-real-world-code-migration-with-github-copilot-agent-mode/blob/main/src/python-app/webapp/weather.json) file to check the allowed parameters to test the endpoints."
 
-### 3. Explore and run the shell tests
+### 3. Explore and run the Python tests
 
 > *Try using GitHub Copilot in Agent Mode for this step.*
 
-Tests are provided in the `tests` directory under `src/tests`. Open the `test_endpoints.sh` file and use it to run tests. It requires the Python application to be running. Run the tests and inspect the output.
+Tests are provided in the `src/python-app/webapp/test_main.py` file. This Python test file uses FastAPI's TestClient to validate the API endpoints. Run the tests and inspect the output.
 
-Open a new bash terminal and run it:
+Open a new terminal and run the Python tests using pytest:
 
 ```bash
-bash ./tests/test_endpoints.sh
+cd src/python-app/webapp
+pytest test_main.py -v
 ```
 
 - If any tests are not currently passing, leverage GitHub Copilot to help you fix them and then re-run the tests.
 
-!!! warning
-    The application must be running for the tests to pass. If the app is not running you will get http errors.
-    You can ask GitHub Copilot in Agent Mode for help to run the application and gain insights on how to start it.
+!!! note
+    These Python tests use FastAPI's TestClient, which doesn't require the application to be running separately. The tests will start the app internally for testing.
