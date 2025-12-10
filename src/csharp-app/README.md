@@ -12,7 +12,7 @@ A travel weather API built with ASP.NET Core Minimal APIs, demonstrating migrati
 
 ## Requirements
 
-- .NET 9.0 SDK or later
+- .NET 10 SDK or later
 - Visual Studio Code with C# Dev Kit (recommended)
 
 ## Project Structure

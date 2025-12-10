@@ -2,13 +2,13 @@
 
 ## Overview
 
-Successfully implemented a complete migration of the Python FastAPI weather application to C# using .NET 9.0 Minimal APIs. This implementation demonstrates how to use GitHub Copilot for real-world code migration scenarios.
+Successfully implemented a complete migration of the Python FastAPI weather application to C# using .NET 10 Minimal APIs. This implementation demonstrates how to use GitHub Copilot for real-world code migration scenarios.
 
 ## What Was Implemented
 
 ### 1. C# Weather API Application
 - **Location**: `src/csharp-app/WeatherApi/`
-- **Framework**: ASP.NET Core 9.0 with Minimal APIs
+- **Framework**: ASP.NET Core 10 with Minimal APIs
 - **Features**:
   - 3 REST API endpoints (root redirect, countries list, monthly weather data)
   - Swagger/OpenAPI documentation with Swashbuckle
@@ -33,7 +33,7 @@ Successfully implemented a complete migration of the Python FastAPI weather appl
   - Tests all endpoints and error cases
 
 ### 4. Development Environment
-- **Updated**: `.devcontainer/Dockerfile` - Added .NET 9.0 SDK installation
+- **Updated**: `.devcontainer/Dockerfile` - Added .NET 10 SDK installation
 - **Updated**: `.devcontainer/devcontainer.json` - Added C# extensions and support
 - **Updated**: `.gitignore` - Added .NET build artifacts exclusions
 
@@ -50,7 +50,7 @@ Successfully implemented a complete migration of the Python FastAPI weather appl
 ## Technical Details
 
 ### Technology Stack
-- **C# Version**: 9.0+ (with .NET 9.0)
+- **C# Version**: 10+ (with .NET 10)
 - **Web Framework**: ASP.NET Core Minimal APIs
 - **Testing Framework**: MSTest
 - **API Documentation**: Swashbuckle.AspNetCore
@@ -169,7 +169,7 @@ API_PORT=5000 ./test_csharp_endpoints.sh
 - `src/tests/test_csharp_endpoints.sh` - C# test script
 
 ### Modified Files
-- `.devcontainer/Dockerfile` - Added .NET 9.0 SDK
+- `.devcontainer/Dockerfile` - Added .NET 10 SDK
 - `.devcontainer/devcontainer.json` - Added C# extensions
 - `.gitignore` - Added .NET artifacts
 - `README.md` - Updated for C# migration

@@ -46,7 +46,7 @@ Before joining the workshop, there is only one prerequisite: you must have a pub
 1. GitHub Copilot Chat
 1. VS Code
 1. Python 3.12
-1. C# with .NET 9.0 (Minimal APIs)
+1. C# with .NET 10 (Minimal APIs)
 1. MSTest for unit testing
 1. Swagger/OpenAPI for API documentation
 

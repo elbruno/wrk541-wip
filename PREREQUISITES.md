@@ -33,16 +33,16 @@ python3 --version  # Should show Python 3.12.x
 pip3 --version
 ```
 
-### 2. .NET 9.0 SDK
+### 2. .NET 10 SDK
 
 **Purpose**: Build and run the C# weather application with Minimal APIs
 
 **Download Links**:
-- **All Platforms**: [.NET 9.0 SDK Download](https://dotnet.microsoft.com/download/dotnet/9.0)
+- **All Platforms**: [.NET 10 SDK Download](https://dotnet.microsoft.com/download/dotnet/10.0)
 - **Direct Links**:
-  - [Windows x64 Installer](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-9.0.100-windows-x64-installer)
-  - [macOS x64 Installer](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-9.0.100-macos-x64-installer)
-  - [macOS ARM64 Installer](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-9.0.100-macos-arm64-installer)
+  - [Windows x64 Installer](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-10.0.100-windows-x64-installer)
+  - [macOS x64 Installer](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-10.0.100-macos-x64-installer)
+  - [macOS ARM64 Installer](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-10.0.100-macos-arm64-installer)
   - [Linux Installation Instructions](https://learn.microsoft.com/en-us/dotnet/core/install/linux)
 
 **Linux Installation (Ubuntu)**:
@@ -54,12 +54,12 @@ rm packages-microsoft-prod.deb
 
 # Install .NET SDK
 sudo apt update
-sudo apt install dotnet-sdk-9.0
+sudo apt install dotnet-sdk-10.0
 ```
 
 **Verify Installation**:
 ```bash
-dotnet --version  # Should show 9.0.100 or later
+dotnet --version  # Should show 10.0.100 or later
 ```
 
 ### 3. Git
@@ -303,7 +303,7 @@ After installing all prerequisites, verify your setup:
 python3 --version          # Should show 3.12.x
 
 # Check .NET
-dotnet --version           # Should show 9.0.100 or later
+dotnet --version           # Should show 10.0.100 or later
 
 # Check Git
 git --version
