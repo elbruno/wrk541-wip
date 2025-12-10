@@ -74,7 +74,18 @@ Implement all other endpoints using Agent Mode or Plan Mode. In each scenario, a
 
 Use the same process as above to create all other endpoints. Add a single endpoint at a time, validate it, and run the Python tests to ensure compatibility.
 
-!!! tip "When implementing the next endpoint - e.g. '/countries' - specify in your prompt to Copilot that it should use the same data used by the python app, hosted in the 'weather.json' file."
+!!! important
+    During this process, GitHub Copilot will ask for your approval before performing various actions such as:
+
+    - Editing files (Program.cs, weather.json, etc.)
+    - Running commands in the terminal
+    - Creating new files or directories
+    - Installing packages or dependencies
+    
+    Keep an eye on the Copilot requests and approve the actions as needed. Review each proposed change carefully before accepting to ensure Copilot is implementing the solution correctly. Your active participation helps Copilot complete the task successfully.
+
+!!! tip
+    When implementing the next endpoint - e.g. '/countries' - specify in your prompt to Copilot that it should use the same data used by the python app, hosted in the 'weather.json' file.
 
 For the JSON file, you will need to deserialize it. If you aren't familiar with this process you will have to rely on Copilot guidance. Ensure that you generate the smallest possible code and validate it immediately.
 
@@ -96,5 +107,15 @@ Let's start asking GitHub Copilot to help you plan the implementation of the mis
     The root of the API should redirect to the swagger UI page.    
 
 Once the plan is done you should see the plan, and you can ask GitHub Copilot to start implementing the steps by switching to **Agent Mode** and asking it to follow the plan step by step.
+
+!!! important
+    As Copilot executes the plan, it will request your approval for various actions:
+
+    - File modifications (editing Program.cs, adding model classes, etc.)
+    - Terminal commands (running dotnet commands, tests, etc.)
+    - File creation (new classes, configuration files)
+    - Package installations
+    
+    Monitor the Copilot chat window closely and review each proposed action before approving. This interactive process ensures that Copilot follows the correct path and allows you to catch any potential issues early. Your guidance helps Copilot successfully complete the implementation.
 
 ![Start Implementation](./media/start_plan_implementation.png){ target="_blank" }
