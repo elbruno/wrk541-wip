@@ -1,6 +1,6 @@
 # Resources
 
-This page provides a comprehensive collection of resources to support your learning journey and help you become proficient in Rust development and code migration.
+This page provides a comprehensive collection of resources to support your learning journey and help you become proficient in Python-to-C# code migration with GitHub Copilot.
 
 ## GitHub Copilot Resources
 
