@@ -55,7 +55,8 @@ As we will carry out a more complex set of tasks, we will work in **Agent Mode**
      Create the C# scaffolding in csharp-app folder, where we are going to migrate the python project. Use .NET Minimal APIs. Don't perform any code migration for now. Provide me with guided steps to run the project afterwards.
      ```
 
-The framework and the serializer should automatically be included without you having to specify it. This file can be used for any other instruction you don't want to repeat.
+The framework and the serializer should automatically be included without you having to specify it.
 
 Once GitHub Copilot has created the scaffolding, have a look at the files created in the `csharp-app` folder. You should see a `.csproj` file and a `Program.cs` file.
-Ask GitHub Copilot to clarify any doubts you might have about the files created and their purpose.
+
+(Optional) Ask GitHub Copilot to clarify any doubts you might have about the files created and their purpose.
