@@ -1,6 +1,6 @@
 # Workshop Introduction
 
-## Migrating Zava's Temperature API from Python to C#
+## Migrating Zava's Temperature API from Python to C #
 
 As part of **Zava**'s business goals, the company is expanding their cutting-edge smart fiber technology to a wider array of retail products. Zava specializes in heat-resistant materials that adapt to various climate conditions, and their current temperature/season/location API serves as a critical backend service for these innovative products.
 
@@ -36,7 +36,7 @@ GitHub Copilot offers three distinct modes: **Ask, Edit** and **Agent**, each de
 
 ### Ask Mode
 
-**Ask Mode** is a Q&A assistant that helps you understand code, solve problems or learn concepts. It allows you to ask questions in natural language, and Copilot responds with explanations, snippets or suggestions. It does not directly modify any code. 
+**Ask Mode** is a Q&A assistant that helps you understand code, solve problems or learn concepts. It allows you to ask questions in natural language, and Copilot responds with explanations, snippets or suggestions. It does not directly modify any code.
 
 !!! tip "Ask mode works best for quick clarifications, brainstorming solutions and providing sample implementations."
 
@@ -44,13 +44,19 @@ GitHub Copilot offers three distinct modes: **Ask, Edit** and **Agent**, each de
 
 **Edit Mode** enables *direct code modifications* based on natural language instructions. You can highlight specific code blocks or files, describe the desired changes, and Copilot will propose edits. These changes are presented as diffs for your review, ensuring you retain control over the final implementation.
 
-!!! tip "Try Edit mode in targeted updates, such as refactoring or adding error handling."
+!!! tip "Try Edit mode in targeted updates, such as refactoring or adding error handling. Most of the time, Agent mode is the preferred option over Edit mode for more complex tasks."
 
 ### Agent Mode
 
  **Agent Mode** is the most autonomous and powerful of the three. It allows Copilot to analyze your entire project, plan tasks, make edits, run commands, and iterate until the goal is achieved. This mode is ideal for multi-step tasks, such as building features, fixing bugs, or scaffolding new components. While Agent mode automates much of the process, it still surfaces potentially risky actions for your approval, ensuring safety and correctness.
 
 !!! tip "Agent mode will carry out actions beyond just editing, such as writing code and creating new files. It is best used in tasks that imply more than just prompting for knowledge or editing single lines."
+
+### Plan Mode
+
+**Plan Mode** is a new feature in GitHub Copilot that allows users to outline their coding tasks and objectives more effectively. In this mode, Copilot assists in creating a structured plan for your coding project, helping you break down complex tasks into manageable steps. This can include generating boilerplate code, suggesting project structures, and even identifying potential challenges before you start coding.
+
+!!! tip "Use Plan Mode to enhance your workflow by setting clear objectives and receiving tailored suggestions for your project."
 
 ## Available Models
 
