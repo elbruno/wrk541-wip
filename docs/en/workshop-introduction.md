@@ -8,6 +8,33 @@ To support this expansion and ensure enterprise-level reliability, Zava needs to
 
 This workshop will guide you through the complete migration process using GitHub Copilot, demonstrating how AI-assisted development can streamline the transition from Python to C# while maintaining full API compatibility and improving overall system robustness.
 
+### 🎯 Why This Matters: Real-World Context
+
+!!! info "Understanding Language Migration in Production"
+    **Why do companies migrate between programming languages?**
+    
+    Organizations migrate codebases for several strategic reasons:
+    
+    - **Performance Requirements**: C# with .NET offers better performance characteristics for high-throughput APIs
+    - **Type Safety**: Static typing in C# catches errors at compile-time, reducing production bugs
+    - **Ecosystem Integration**: .NET's enterprise tooling and Azure integration support scalability
+    - **Team Expertise**: Aligning technology stack with team skills and hiring market
+    - **Long-term Support**: Enterprise support and predictable release cycles
+    
+    **Why did Zava choose C# for this migration?**
+    
+    - Enhanced type safety ensures reliable smart fiber product integrations
+    - Better performance handles increased retail market demand
+    - Seamless Azure deployment for global scalability
+    - Strong tooling ecosystem for enterprise-grade monitoring and debugging
+    
+    **Why incremental validation matters in production:**
+    
+    - **Risk Management**: Testing each endpoint individually minimizes the blast radius of errors
+    - **Continuous Verification**: Maintaining Python tests ensures the new implementation matches the original behavior
+    - **Confidence Building**: Step-by-step validation provides clear checkpoints and rollback points
+    - **Learning from AI**: Validating small changes helps you learn when to trust and when to question AI suggestions
+
 Let's go through some challenging requests for GitHub Copilot and address them
 as they happen.
 
@@ -64,6 +91,20 @@ GitHub Copilot offers distinct modes: **Ask**, **Edit**, **Plan** and **Agent**,
 ## Using File References in Prompts
 
 When working with GitHub Copilot throughout this workshop, you'll encounter prompts that use the `#file:filename` syntax. This is an important pattern to understand:
+
+!!! tip "How to Use #file: References - Quick Guide"
+    **What it does:** The `#file:filename` syntax provides specific file context to GitHub Copilot, helping it understand exactly which file you're working with.
+    
+    **How to use it:**
+    
+    1. Type `#` in the Copilot chat window
+    2. A file picker will appear automatically
+    3. Select the file you want to reference (e.g., `main.py` or `Program.cs`)
+    4. Then type or paste the rest of your prompt
+    
+    **Why it matters:** Providing file context helps Copilot generate more accurate and relevant suggestions by understanding your project structure and the specific code you're working on.
+    
+    **Example:** Instead of asking "add an endpoint", ask "#file:Program.cs add the root endpoint only"
 
 !!! note
     In the prompts where a `#file:filename` is used, it indicates to Copilot the file where the code should be generated.

@@ -31,6 +31,14 @@ nav:
     - Challenge 1: Challenge-1.md
     - Challenge 2: Challenge-2.md
     - Homework: Homework.md
+  - Reference Materials:
+    - Completed Example Guide: completed-example-guide.md
+    - Glossary: glossary.md
+    - Terminology Guide: terminology-guide.md
+  - For Proctors:
+    - Common Questions FAQ: proctor-resources/common-questions-faq.md
+    - Troubleshooting Playbook: proctor-resources/troubleshooting-playbook.md
+    - Progress Tracker Template: proctor-resources/progress-tracker-template.md
   - Workshop Improvement Suggestions: workshop-improvement-suggestions.md
   - Resources: resources.md
 
