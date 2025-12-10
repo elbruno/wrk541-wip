@@ -51,5 +51,7 @@ For this step, you must use **Agent Mode**.
     Prompt *(Agent Mode)*
 
     ```text
-    Help me run the Python tests in src/python-app/webapp/test_main.py and check that they pass. In case of failure, help me address the failures to get the tests passing
+    Analyze the python application.
+    Help me run the Python tests in src/python-app/webapp/test_main.py and check that they pass. 
+    In case of failure, help me address the failures to get the tests passing
     ```
