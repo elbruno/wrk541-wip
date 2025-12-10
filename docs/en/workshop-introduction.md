@@ -1,12 +1,12 @@
 # Workshop Introduction
 
-## Migrating Zava's Temperature API from Python to Rust
+## Migrating Zava's Temperature API from Python to C#
 
 As part of **Zava**'s business goals, the company is expanding their cutting-edge smart fiber technology to a wider array of retail products. Zava specializes in heat-resistant materials that adapt to various climate conditions, and their current temperature/season/location API serves as a critical backend service for these innovative products.
 
-To support this expansion and ensure enterprise-level reliability, Zava needs to **migrate their existing Python-based temperature API to Rust**. This migration will provide enhanced security through Rust's memory safety features, improved performance with zero-cost abstractions, and better scalability to handle the increased demand from retail market integration. The API currently provides historical weather data across multiple countries, cities, and months - data that's essential for Zava's smart fiber products to perform optimally in different environmental conditions.
+To support this expansion and ensure enterprise-level reliability, Zava needs to **migrate their existing Python-based temperature API to C#**. This migration will provide enhanced type safety through C#'s compile-time checking, improved performance with optimized runtime, and better scalability to handle the increased demand from retail market integration with enterprise-grade .NET infrastructure. The API currently provides historical weather data across multiple countries, cities, and months - data that's essential for Zava's smart fiber products to perform optimally in different environmental conditions.
 
-This workshop will guide you through the complete migration process using GitHub Copilot, demonstrating how AI-assisted development can streamline the transition from Python to Rust while maintaining full API compatibility and improving overall system robustness.
+This workshop will guide you through the complete migration process using GitHub Copilot, demonstrating how AI-assisted development can streamline the transition from Python to C# while maintaining full API compatibility and improving overall system robustness.
 
 Let's go through some challenging requests for GitHub Copilot and address them
 as they happen.
@@ -22,7 +22,7 @@ as they happen.
 
 You will be working with a Python project that has an HTTP
 API. This project needs to be migrated and your main task will be to migrate
-it over using the Rust programming language.
+it over using the C# programming language with .NET Minimal APIs.
 Here are some features:
 
 1. Run the web application and open up the browser

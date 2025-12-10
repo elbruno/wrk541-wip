@@ -11,7 +11,7 @@ You can start with Agent mode to create the Dockerfile, then switch over to
 Edit mode when making updates to the Dockerfile. Finally, switch over to Agent
 mode to get guidance verifying the container.
 
-1. Ask Copilot to help you generate a Dockerfile to containerize the Rust
+1. Ask Copilot to help you generate a Dockerfile to containerize the C#
    project
 1. Review the Dockerfile created, optionally switch to Edit mode to make
    specific changes to the file
