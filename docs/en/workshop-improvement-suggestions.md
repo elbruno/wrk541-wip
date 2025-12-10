@@ -16,8 +16,8 @@ This document provides recommendations to enhance the WRK541 workshop experience
 - **Benefit**: Attendees won't discover missing prerequisites halfway through the workshop
 
 #### 2. **Repository URL Consistency**
-- **Current State**: The mkdocs.yml references `https://github.com/gcordido/github-copilot-migrating-languages` but the actual repo is `https://github.com/elbruno/wrk541-wip/tree/main`
-- **Suggestion**: Update all documentation to reference the correct work-in-progress repository URL: `https://github.com/elbruno/wrk541-wip/tree/main`
+- **Current State**: The mkdocs.yml references `https://github.com/gcordido/github-copilot-migrating-languages` but the actual repo is `https://github.com/elbruno/wrk541-wip`
+- **Suggestion**: Update all documentation to reference the correct work-in-progress repository URL: `https://github.com/elbruno/wrk541-wip`
 - **Benefit**: Eliminates confusion and ensures attendees are looking at the correct resources
 
 #### 3. **Quick Start Guide Enhancement**
@@ -424,25 +424,25 @@ This document provides recommendations to enhance the WRK541 workshop experience
 ## Implementation Priority
 
 ### High Priority (Address First)
-1. Repository URL consistency (#2)
-2. Pre-Workshop Checklist (#1)
-3. Common Error Recovery Guide (#6)
-4. Proctor Troubleshooting Playbook (#27)
-5. Time Estimates Per Section (#7)
+- Repository URL consistency (Suggestion #2)
+- Pre-Workshop Checklist (Suggestion #1)
+- Common Error Recovery Guide (Suggestion #6)
+- Proctor Troubleshooting Playbook (Suggestion #27)
+- Time Estimates Per Section (Suggestion #7)
 
 ### Medium Priority (Enhance Experience)
-6. Copilot Mode Decision Tree (#4)
-7. Progress Checkpoints (#5)
-8. Prompt Engineering Tips (#10)
-9. Common Attendee Question Bank (#20)
-10. Port Management Guidance (#38)
+- Copilot Mode Decision Tree (Suggestion #4)
+- Progress Checkpoints (Suggestion #5)
+- Prompt Engineering Tips (Suggestion #10)
+- Common Attendee Question Bank (Suggestion #20)
+- Port Management Guidance (Suggestion #38)
 
 ### Low Priority (Nice to Have)
-11. Visual Consistency (#33)
-12. Mobile-Friendly Documentation (#34)
-13. Workshop Completion Certificate (#44)
-14. Navigation Improvements (#32)
-15. Glossary (#36)
+- Visual Consistency (Suggestion #33)
+- Mobile-Friendly Documentation (Suggestion #34)
+- Workshop Completion Certificate (Suggestion #44)
+- Navigation Improvements (Suggestion #32)
+- Glossary (Suggestion #36)
 
 ## Summary
 
