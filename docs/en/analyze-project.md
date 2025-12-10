@@ -10,13 +10,16 @@ Now that you have a good understanding of the project, you can start strategizin
     Prompt *(Ask Mode)*
 
     ```text
-    #codebase provide a summary of the tests for the python application in this repository
+    #file:test_main.py provide a summary of the tests for the python application in this repository
     ```
+
+- Ask GitHub Copilot to explain why the tests are a good way to validate the C# migration
+
 ??? question "Tip"
     Prompt *(Ask Mode)*
 
     ```text
-    #codebase why are the Python tests in test_main.py a good way to validate the C# rewrite?
+    #file:test_main.py why are the Python tests in test_main.py a good way to validate the C# rewrite?
     ```
 
 - Ask for suggestions on how to properly rewrite this project in C#
@@ -29,7 +32,9 @@ Now that you have a good understanding of the project, you can start strategizin
     Prompt *(Ask Mode)*
 
     ```text
-    #codebase do not change any code. Just provide suggestions on how to properly rewrite this project in C#
+    Just provide suggestions on how to properly rewrite this project in C#.
+    Keep this high level.
+    Do not change any code. 
     ```
 
 ### 5. Identify missing tests
