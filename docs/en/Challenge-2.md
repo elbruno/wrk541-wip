@@ -2,6 +2,8 @@
 
 ## Challenge 2: Database Integration with Entity Framework Core
 
+**Difficulty:** 🔥🔥 Advanced
+
 !!! info
     Take this challenge further by replacing the static JSON data source with a real database.
 

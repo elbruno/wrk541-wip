@@ -4,6 +4,8 @@ Ready for an extra challenge? This section presents advanced scenarios that will
 
 ## Challenge 1: Containerizing the project
 
+**Difficulty:** 🔥 Intermediate
+
 Containerize this project so that users can run it in other environments
 without having to install and compile dependencies.
 

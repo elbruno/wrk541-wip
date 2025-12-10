@@ -26,6 +26,22 @@ In this workshop, you will:
 
 Before joining the workshop, there is only one prerequisite: you must have your own GitHub account. All resources, dependencies, and data are part of the repository itself. Make sure you have your GitHub Copilot license, trial, or the free version.
 
+### ✅ Before You Begin - Quick Checklist
+
+Make sure you have the following ready before starting the workshop:
+
+- [ ] **GitHub Account**: You have a GitHub account created and can log in
+- [ ] **GitHub Copilot Access**: You have GitHub Copilot enabled (paid subscription, trial, or free version)
+- [ ] **Environment Choice**: You've decided between:
+  - ☁️ **GitHub Codespaces** (recommended - zero setup required)
+  - 💻 **Local Development** (requires Python 3.12, .NET 10 SDK, VS Code - see [PREREQUISITES.md](../../PREREQUISITES.md) for full details)
+- [ ] **For Local Setup**: All prerequisites are installed and verified (if you chose local development)
+
+!!! tip "Not sure which environment to choose?"
+    We recommend GitHub Codespaces for this workshop as it provides a pre-configured environment with all tools ready to use. No installation needed!
+
+### Creating a GitHub Account
+
 If you don't have a GitHub account yet, you can create one for free by following the instructions below.
 
 1. Go to [GitHub's Sign Up Page](https://github.com/join).
