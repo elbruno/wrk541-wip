@@ -4,7 +4,7 @@ site_description: Perform a challenging migration to a completely different lang
 
 # Repository ..................................................
 repo_name: Real World Code Migration with GitHub Copilot
-repo_url: https://github.com/gcordido/github-copilot-migrating-languages
+repo_url: https://github.com/elbruno/wrk541-wip
 
 
 # Copyright ...................................................
@@ -31,6 +31,7 @@ nav:
     - Challenge 1: Challenge-1.md
     - Challenge 2: Challenge-2.md
     - Homework: Homework.md
+  - Workshop Improvement Suggestions: workshop-improvement-suggestions.md
   - Resources: resources.md
 
 plugins:
