@@ -11,15 +11,6 @@
 
 If you will be delivering this session, check the [session-delivery-sources](./session-delivery-resources/) folder for slides, scripts, and other resources.
 
-### 📋 Workshop Improvement Suggestions
-
-For both **attendees** and **proctors/speakers**, we've created a comprehensive guide with suggestions and improvements to enhance the workshop experience. Check out the [Workshop Improvement Suggestions](./docs/en/workshop-improvement-suggestions.md) document for:
-
-- Tips for attendees to get the most out of the workshop
-- Guidance for proctors to deliver the workshop effectively
-- Common troubleshooting scenarios and solutions
-- Best practices for working with GitHub Copilot modes
-
 ### Session Description
 
 - **Who is this for**: Any technologist that is looking to apply AI pair-programming techniques with GitHub Copilot to perform challenging work like migrating or translating from one programming language to another.

@@ -39,7 +39,6 @@ nav:
     - Common Questions FAQ: proctor-resources/common-questions-faq.md
     - Troubleshooting Playbook: proctor-resources/troubleshooting-playbook.md
     - Progress Tracker Template: proctor-resources/progress-tracker-template.md
-  - Workshop Improvement Suggestions: workshop-improvement-suggestions.md
   - Resources: resources.md
 
 plugins:
