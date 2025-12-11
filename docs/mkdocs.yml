@@ -2,6 +2,9 @@ site_name: Real World Code Migration with GitHub Copilot
 site_author: Alfredo Deza, Gustavo Cordido
 site_description: Perform a challenging migration to a completely different language.
 
+docs_dir: en
+site_dir: ../site
+
 # Repository ..................................................
 repo_name: Real World Code Migration with GitHub Copilot
 repo_url: https://github.com/elbruno/wrk541-wip
@@ -45,12 +48,6 @@ plugins:
   - glightbox
   - include-markdown
   - search
-  - i18n:
-      docs_structure: folder
-      languages:
-        - locale: en
-          name: English
-          default: true
 
 theme:
   name: material
@@ -97,4 +94,4 @@ markdown_extensions:
   # - js/custom.js
 
 extra_css:
-  - css/custom.css
+  - ../css/custom.css
